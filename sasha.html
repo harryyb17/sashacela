@@ -53,7 +53,7 @@
             border: none; /* Remove border */
             background-color: transparent; /* Transparent background */
             padding: 0; /* Remove padding */
-            display: block; /* Make it a block element to occupy full width */
+        
         }
 		
         #profile-image {
@@ -116,11 +116,11 @@
 		footer {
             
             color: #000;
-            text-align: center;
+            text-align: right;
             padding: 12px;
             position: absolute;
             bottom: 0;
-            width: 30%;
+            width: 100%;
         }
 		
 		@media only screen and (max-width: 600px) {
@@ -139,8 +139,7 @@
             }
 			
 			footer {
-				width: 100%;
-				bottom: 0;
+				position: fixed;
 			}
         }
     </style>
