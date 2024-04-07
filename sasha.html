@@ -1,71 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sleek and Modern Page</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url('https://static.wixstatic.com/media/11062b_4b7c9a8e48334d5aad2fd274fddba3bc~mv2.jpg/v1/fill/w_1225,h_923,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_4b7c9a8e48334d5aad2fd274fddba3bc~mv2.jpg');
-      background-size: cover;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Sasha Cela</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
 
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
 
-    .content img {
-      max-width: 100%;
-      height: auto;
-    }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 100px; /* Adjust as needed */
+        }
 
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        #profile-image-container {
+            width: 150px; /* Adjust the size of the circular area */
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden; /* Clip the content to the border-radius */
+            margin-bottom: 20px;
+        }
 
-    .social-buttons button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background-color: #007bff;
-      color: #fff;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+        #profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .social-buttons button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block; /* Changed to block */
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="content">
-      <img src="https://static.wixstatic.com/media/347af2_7b0bafa0f6a9450f9cc9a1e8c8d2add2~mv2.jpg/v1/crop/x_0,y_192,w_1536,h_1664/fill/w_535,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_5649.jpg" alt="">
-    </div>
-    <div class="social-buttons">
-      <button>Facebook</button>
-      <button>Twitter</button>
-      <button>Instagram</button>
-    </div>
-  </div>
+    <header>
+        <h1>My Social Media</h1>
+    </header>
+
+    <main>
+        <div id="profile-image-container">
+            <img id="profile-image" src="https://images2.imgbox.com/dc/ea/7wB5nuSI_o.jpg" alt="Your Profile Image">
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
