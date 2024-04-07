@@ -76,24 +76,6 @@
             margin-bottom: 10px; /* Reduce the margin between button items */
         }
 		
-		.button-container {
-            position: relative; /* Enable positioning */
-            display: flex; /* Ensure inline block behavior */
-			padding: 8px 16px; /* Adjust the padding */
-        }
-
-        .note {
-            position: absolute; /* Position the note relative to the button container */
-            top: -25px; /* Adjust the vertical position */
-            left: 50%; /* Align the note horizontally */
-            transform: translateX(-50%); /* Center the note horizontally */
-            background-color: rgba(0, 0, 0, 0.8); /* Adjust the note background color */
-            color: #fff;
-            font-size: 12px; /* Adjust the font size of the note */
-            padding: 5px 20px; /* Adjust the padding of the note */
-            border-radius: 20px; /* Adjust the border radius */
-            z-index: 1; /* Ensure the note appears above the button */
-        }
 
         .shake {
             animation: shake 0.5s ease infinite; /* Define shake animation */
@@ -183,9 +165,9 @@
             <img id="profile-image" src="https://pbs.twimg.com/media/GFCx4oDWEAAAxHz?format=jpg" alt="Sasha's Profile Image"></a>
         </div>
         <ul>
-            <li><div class="button-container"><span class="note">70% OFF</span><a href="https://www.onlyfans.com/sashacela" target="_blank" class="shake">
+            <li><a href="https://www.onlyfans.com/sashacela" target="_blank" class="shake">
                 <img src="https://images2.imgbox.com/6c/9c/1Y0pGhKd_o.jpg" alt="Logo" class="social-logo"> <!-- Onlyfans logo image -->
-                <span class="button-text">Onlyfans</span></a></div></li>
+                <span class="button-text">Onlyfans</span></a></li>
             <li><a href="https://fansly.com/sashacela/posts" target="_blank">
                 <img src="https://images2.imgbox.com/88/16/C24AeHFF_o.jpg" alt="Logo" class="social-logo"> <!-- Fansly logo image -->
                 <span class="button-text">Fansly</span></a></li>
