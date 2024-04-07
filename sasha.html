@@ -35,7 +35,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 100px 140px 20px;
+            padding: 100px 250px 20px;
             margin-top: 80px; /* Adjust to keep the content below the header */
         }
 
@@ -51,7 +51,7 @@
             height: auto;
             display: block;
             border-radius: 50%; /* Make the image circular */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 1.5); /* Add a shadow for depth */
             margin: 0 auto; /* Center the image horizontally */
         }
 
@@ -69,26 +69,38 @@
 
         a {
             text-decoration: none;
-            color: #fff;
+            color: #000;
             font-weight: bold;
             font-size: 16px; /* Adjust the font size */
             display: flex; /* Use flexbox to align items */
             align-items: center; /* Center the items vertically */
             justify-content: center; /* Center the items horizontally */
             padding: 8px 16px; /* Adjust the padding */
-            border-radius: 10px; /* Adjust the border radius for curved edges */
+            border-radius: 30px; /* Adjust the border radius for curved edges */
             transition: background-color 0.3s ease;
-            background-color: rgba(255, 255, 255, 0.2); /* Adjust the background color */
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color */
+			border: 3px solid #000; /* Add black border */
+			position: relative; /* Enable positioning */
+			margin-right: 10px; /* Adjust the distance between buttons */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 1.5); /* Add depth to buttons */
         }
 
         a:hover {
-            background-color: rgba(255, 255, 255, 0.4); /* Adjust the hover background color */
+            background-color: rgba(0, 0, 128, 1.5); /* Adjust the hover background color */
+			color: #ADD8E6;
         }
 
         .social-logo {
             width: 20px; /* Adjust the width of the logo */
             height: 20px; /* Adjust the height of the logo */
-            margin-right: 5px; /* Adjust the space between the logo and text */
+            position: absolute; /* Position the logo relative to the button */
+            left: 10px; /* Adjust the left position */
+            top: 50%; /* Center the logo vertically */
+            transform: translateY(-50%); /* Adjust for vertical centering */
+        }
+		
+		.button-text {
+            margin-left: 30px; /* Adjust the space between the logo and text */
         }
     </style>
 </head>
@@ -104,28 +116,28 @@
         <ul>
             <li><a href="https://www.onlyfans.com/sashacela" target="_blank">
                 <img src="https://images2.imgbox.com/6c/9c/1Y0pGhKd_o.jpg" alt="Logo" class="social-logo"> <!-- Onlyfans logo image -->
-                Onlyfans</a></li>
+                <span class="button-text">Onlyfans</span></a></li>
             <li><a href="https://fansly.com/sashacela/posts" target="_blank">
                 <img src="https://images2.imgbox.com/88/16/C24AeHFF_o.jpg" alt="Logo" class="social-logo"> <!-- Fansly logo image -->
-                Fansly</a></li>
+                <span class="button-text">Fansly</span></a></li>
 			<li><a href="https://www.manyvids.com/Profile/1006722423/sasha-cela/Store/Videos" target="_blank">
                 <img src="https://images2.imgbox.com/d4/0f/3sN2x9MU_o.jpg" alt="Logo" class="social-logo"> <!-- ManyVids logo image -->
-                ManyVids</a></li>
+                <span class="button-text">ManyVids</span></a></li>
 			<li><a href="https://twitter.com/sashacela" target="_blank">
                 <img src="https://images2.imgbox.com/6c/9c/1Y0pGhKd_o.jpg" alt="Logo" class="social-logo"> <!-- Twitter logo image -->
-                Twitter</a></li>
+                <span class="button-text">Twitter</span></a></li>
             <li><a href="https://www.instagram.com/sasha.cela/" target="_blank">
                 <img src="https://images2.imgbox.com/84/14/AkqEJ7Da_o.jpg" alt="Logo" class="social-logo"> <!-- Instagram logo image -->
-                Instagram</a></li>
+                <span class="button-text">Instagram</span></a></li>
 			<li><a href="https://www.reddit.com/user/sasha-cela/" target="_blank">
                 <img src="https://images2.imgbox.com/02/a3/uZpcJc2m_o.jpg" alt="Logo" class="social-logo"> <!-- Reddit logo image -->
-                Reddit</a></li>
+                <span class="button-text">Reddit</span></a></li>
 			<li><a href="https://www.tiktok.com/@sashacela" target="_blank">
                 <img src="https://images2.imgbox.com/fe/ab/Z7nLuk7Q_o.png" alt="Logo" class="social-logo"> <!-- TikTok logo image -->
-                TikTok</a></li>
+                <span class="button-text">TikTok</span></a></li>
 			<li><a href="https://www.tumblr.com/sashacela" target="_blank">
                 <img src="https://images2.imgbox.com/27/5d/c24RDp22_o.png" alt="Logo" class="social-logo"> <!-- Tumblr logo image -->
-                Tumblr</a></li>
+                <span class="button-text">Tumblr</span></a></li>
             <!-- Add more social media links as needed -->
         </ul>
     </main>
