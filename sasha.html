@@ -35,13 +35,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 100px 250px 20px;
+            padding: 100px 280px 20px;
             margin-top: 80px; /* Adjust to keep the content below the header */
         }
 
         #profile-container {
             width: 70%; /* Adjust the width of the image container */
-            max-width: 400px; /* Add maximum width to maintain responsiveness */
+            max-width: 450px; /* Add maximum width to maintain responsiveness */
             height: auto;
             margin-right: 20px; /* Adjust the distance between the image and buttons */
         }
@@ -102,16 +102,42 @@
 		.button-text {
             margin-left: 30px; /* Adjust the space between the logo and text */
         }
+		
+		footer {
+            
+            color: #000;
+            text-align: center;
+            padding: 12px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+		
+		@media only screen and (max-width: 600px) {
+            main {
+                flex-direction: column; /* Stack items vertically */
+                padding: 80px 20px 20px; /* Adjusted padding for mobile */
+            }
+
+            #profile-container {
+                width: 100%; /* Full width for mobile */
+                margin-bottom: 20px; /* Add space between profile and buttons */
+            }
+
+            ul {
+                width: 100%; /* Full width for mobile */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sasha Cela</h1>
+        <h1><a href="https://www.onlyfans.com/sashacela" target="_blank">SASHA CELA</a></h1>
     </header>
 
     <main>
         <div id="profile-container">
-            <img id="profile-image" src="https://images2.imgbox.com/dc/ea/7wB5nuSI_o.jpg" alt="Your Profile Image">
+            <a href="https://www.onlyfans.com/sashacela" target="_blank"><img id="profile-image" src="https://images2.imgbox.com/dc/ea/7wB5nuSI_o.jpg" alt="Your Profile Image"></a>
         </div>
         <ul>
             <li><a href="https://www.onlyfans.com/sashacela" target="_blank">
@@ -141,5 +167,8 @@
             <!-- Add more social media links as needed -->
         </ul>
     </main>
+	 <footer>
+        &copy; 2024 by Sasha Cela
+    </footer>
 </body>
 </html>
