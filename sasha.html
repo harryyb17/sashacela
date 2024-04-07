@@ -45,7 +45,17 @@
             height: auto;
             margin-right: 20px; /* Adjust the distance between the image and buttons */
         }
-
+		
+		.profile-link {
+            /* Define styles for profile link */
+            text-decoration: none;
+            color: inherit; /* Inherit text color from parent */
+            border: none; /* Remove border */
+            background-color: transparent; /* Transparent background */
+            padding: 0; /* Remove padding */
+            display: block; /* Make it a block element to occupy full width */
+        }
+		
         #profile-image {
             width: 100%;
             height: auto;
@@ -110,7 +120,7 @@
             padding: 12px;
             position: absolute;
             bottom: 0;
-            width: 100%;
+            width: 30%;
         }
 		
 		@media only screen and (max-width: 600px) {
@@ -127,17 +137,22 @@
             ul {
                 width: 100%; /* Full width for mobile */
             }
+			
+			footer {
+				width: 100%;
+				bottom: 0;
+			}
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><a href="https://www.onlyfans.com/sashacela" target="_blank">SASHA CELA</a></h1>
+        <h1><a href="https://www.onlyfans.com/sashacela" class="profile-link" target="_blank">SASHA CELA</a></h1>
     </header>
 
     <main>
         <div id="profile-container">
-            <a href="https://www.onlyfans.com/sashacela" target="_blank"><img id="profile-image" src="https://images2.imgbox.com/dc/ea/7wB5nuSI_o.jpg" alt="Your Profile Image"></a>
+            <a href="https://www.onlyfans.com/sashacela" class="profile-link" target="_blank"><img id="profile-image" src="https://images2.imgbox.com/dc/ea/7wB5nuSI_o.jpg" alt="Your Profile Image"></a>
         </div>
         <ul>
             <li><a href="https://www.onlyfans.com/sashacela" target="_blank">
