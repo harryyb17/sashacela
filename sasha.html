@@ -16,7 +16,6 @@
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             text-align: left;
             padding: 20px;
@@ -24,7 +23,6 @@
             top: 0;
             left: 0;
             width: 100%;
-            box-sizing: border-box;
             z-index: 1;
         }
 
@@ -38,22 +36,23 @@
             justify-content: space-between;
             align-items: center;
             padding: 100px 20px 20px;
-            box-sizing: border-box;
             margin-top: 80px; /* Adjust to keep the content below the header */
         }
 
         #profile-container {
-            width: 40%; /* Adjust the width of the image container */
-            max-width: 300px; /* Add maximum width to maintain responsiveness */
+            width: 50%; /* Adjust the width of the image container */
+            max-width: 400px; /* Add maximum width to maintain responsiveness */
             height: auto;
-            border-radius: 50%;
-            overflow: hidden; /* Clip the content to the border-radius */
+            margin-right: 50px; /* Adjust the distance between the image and buttons */
         }
 
         #profile-image {
             width: 100%;
             height: auto;
             display: block;
+            border-radius: 50%; /* Make the image circular */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+            margin: 0 auto; /* Center the image horizontally */
         }
 
         ul {
@@ -72,13 +71,12 @@
             text-decoration: none;
             color: #fff;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px; /* Adjust the font size */
             display: block;
-            padding: 10px 20px;
-            border-radius: 20px; /* Adjust the border radius for curved edges */
+            padding: 8px 16px; /* Adjust the padding */
+            border-radius: 10px; /* Adjust the border radius for curved edges */
             transition: background-color 0.3s ease;
             background-color: rgba(255, 255, 255, 0.2); /* Adjust the background color */
-            box-sizing: border-box;
         }
 
         a:hover {
